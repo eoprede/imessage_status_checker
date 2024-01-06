@@ -1,0 +1,11 @@
+{
+	"check_imessage_for" : ["+12345678901","2345678901", "johndoe@gmail.com"],
+	"bubbles_server" : "https://your.bubbles.server",
+	"bubbles_pw" : "verycomplexpassword",
+	"send_email" : true,
+	"smtp_server" : "smtp.gmail.com",
+	"smpt_server_port" : 465,
+	"sender_email" : "johndoe@gmail.com",
+	"receiver_email" : "janedoe@gmail.com",
+	"email_password" : "your_email_password"
+}
