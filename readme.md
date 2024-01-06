@@ -23,3 +23,6 @@ The following parameters are required:
   - email_password - password to authenticate to mail server with
 ## E-mail setup
 The script assumes a SMTP server that supports SSL. I've tested it with Gmal only, however any other server should work as well. I am using 2FA with my Google account so I have to create a special Gmal App password for this script to work. I am not sure whether accounts without 2FA can authenticate with their regular username/passwords
+
+## Crontab setup for recurring run of the script
+Since you are already running Blue Bubbles server all the time, it makes sense to run this script on it as well. This line will run the script every day at 1pm and redirect output to run.log: `00 13 * * * cd /Users/eoprede/Documents/imessage_status_checker && python3 check_imessage.py >> run.log 2>&1` You will need to adjust the path to the place you have installed the script. If you are not sure about what crontab is, Google will help out - it's a little more convoluted than I am willing to spell out here.
